@@ -89,7 +89,7 @@ read.question("Write the height of your hourglass (>= 20): ", function(height) {
   for(let state=0; state < (height-4)/2; state++) {
     setTimeout(() => {
       console.log(prettyPrint(State(Hourglass(height), state)));
-    }, state*200);
+    }, state*1000);
   }
   read.close();
 });
